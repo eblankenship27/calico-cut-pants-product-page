@@ -34,7 +34,7 @@ header {
     padding: 0 15px;
 }
 
-header > .header-wrap > img {
+header > .header-wrap > a > img {
     max-width: 75px;
 }
 
@@ -47,6 +47,11 @@ header > .header-wrap > img {
 .brand {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;
     font-style: italic;
+}
+
+.header-wrap a {
+    text-decoration: none;
+    color: #222222;
 }
 
 #nav-bar ul{
