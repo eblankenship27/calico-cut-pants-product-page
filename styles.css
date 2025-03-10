@@ -241,10 +241,41 @@ form {
     margin-top: 10px;
 }
 
-#Submit {
+/* #submit {
     width: 20%;
     margin-top: 10px;
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #24476e;
+    color: #d0e0f2;
+    font-weight: 800;
+} */
+
+input[type="email"] {
+    padding: 4px;
 }
+
+input[type="submit"] {
+    width: 20%;
+    margin-top: 10px;
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #24476e;
+    color: #d0e0f2;
+    font-weight: 800;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+    cursor: pointer;
+    background-color: #2b2b2b;
+    transition: background-color 1s;
+} 
 
 span:not(.tim) {
     text-decoration: line-through;
@@ -267,9 +298,15 @@ span:not(.tim) {
     text-decoration: none;
 }
 
+.section_wrap h3 {
+    font-style: italic;
+    font-size: 25px;
+}
+
 .based_on, .homeless {
     width: 40%;
     padding: 25px 0;
+    font-size: 0.8rem;
 }
 
 .based_on {
@@ -277,6 +314,25 @@ span:not(.tim) {
     margin-right: 5%;
 }
 
+#video {
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
 .homeless {
     margin-right: 10%;
+
+}
+
+.chicago {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.donate_container {
+    background-color: lavender;
+    margin-top: 10px;
+    border-radius: 10px;
+    color:#222222;
+    padding: 2px 5px;
 }
