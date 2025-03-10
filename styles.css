@@ -11,6 +11,7 @@ html {
 
 body {
     background-color: #ffffff;
+    line-height: 1.5rem;
 }
 
 li {
@@ -47,6 +48,8 @@ header > .header-wrap > a > img {
 .brand {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;
     font-style: italic;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .header-wrap a {
@@ -164,6 +167,13 @@ header > .header-wrap > a > img {
     align-items: center;;
 }
 
+.product_name {
+    font-size: 25px;
+    font-weight: 200;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 0.9rem;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -210,6 +220,32 @@ header > .header-wrap > a > img {
 
 }
 
+.mailing {
+    width: 90vw;
+    padding: 10px;
+    border-top: #222222 solid 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#email {
+    width: 30%;
+    margin-top: 10px;
+}
+
+#Submit {
+    width: 20%;
+    margin-top: 10px;
+}
+
 span:not(.tim) {
     text-decoration: line-through;
     font-style: italic;
@@ -222,6 +258,13 @@ span:not(.tim) {
     align-items: center;
     justify-content: flex-start;
     text-align: center;
+    background-color: #24476e;
+    color: #d0e0f2;
+}
+
+.section_wrap a {
+    color: #d0e0f2;
+    text-decoration: none;
 }
 
 .based_on, .homeless {
