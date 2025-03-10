@@ -1,0 +1,217 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body {
+    background-color: #ffffff;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    height: 100px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 5px 10px;
+    padding: 10px 0;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header > .header-wrap > img {
+    max-width: 75px;
+}
+
+.menu-icon {
+    font-size: 2.4em;
+    color: #222222;
+    line-height: 50px;
+}
+
+.brand {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;
+    font-style: italic;
+}
+
+#nav-bar ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 95px;
+    right :0;
+    background-color: #fff9e0;
+    box-shadow: -12px 12px 15px -15px;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.15s;
+}
+
+#nav-bar > ul > li {
+    padding: 0 25px;
+}
+
+#nav-bar > ul > li > a {
+    display: inline-block;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.02em;;
+}
+
+#nav-bar > ul > li > a:hover, 
+#nav-bar > ul > li > a:focus {
+    color: rgb(59, 59, 59)
+}
+
+#checkbox {
+    display: none;
+
+}
+
+#checkbox:checked ~ nav ul {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: 0.5s; 
+}
+
+@media only screen and (min-width: 800px) {
+    .menu-icon {
+        display: none;
+        visibility: hidden;
+    }
+
+    #nav-bar {
+        position: relative;
+        top: -10px;
+        background-color: transparent;
+    }
+
+    #nav-bar ul {
+        max-height: 100px;
+        padding: 0;
+        text-align: right;
+        top: 0;
+        box-shadow: none;
+        display: inline-flex;
+        flex-direction: row;
+        
+        background-color: transparent;
+    }
+
+    #nav-bar ul li {
+        display: inline-flex;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    #nav-bar ul li a {
+        padding: 8px;
+    }
+}
+
+
+.sections {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Annoucements {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(
+        #24476e,
+        #2675cf
+    );
+    margin: 100px 0 0  0;
+    padding: 15px 0;
+}
+
+.sale {
+    color: #d3d3d3;
+}
+
+#Products {
+    width: 75%;
+    margin: 25px auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+#product {
+    padding: 15px;
+
+}
+
+#product img {
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#product > .price {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif
+
+}
+
+span:not(.tim) {
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.section_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.based_on, .homeless {
+    width: 40%;
+    padding: 25px 0;
+}
+
+.based_on {
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.homeless {
+    margin-right: 10%;
+}
